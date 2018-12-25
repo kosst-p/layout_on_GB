@@ -3,38 +3,47 @@ body{
 }
 @font-face{
     font-family: 'Raleway-bold';
-    src        : url('../maket/fonts/raleway-bold.ttf')
+    src        : url('../fonts/raleway-bold.ttf')
 }
 @font-face{
     font-family: 'Raleway-extrabold';
-    src        : url('../maket/fonts/raleway-extrabold.ttf')
+    src        : url('../fonts/raleway-extrabold.ttf')
 }
 @font-face{
     font-family: 'Raleway-regular';
-    src        : url('../maket/fonts/raleway-regular.ttf')
+    src        : url('../fonts/raleway-regular.ttf')
 }
 @font-face{
     font-family: 'Raleway-heavy';
-    src        : url('../maket/fonts/raleway-heavy.ttf')
+    src        : url('../fonts/raleway-heavy.ttf')
 }
 @font-face{
     font-family: 'Raleway-black';
-    src        : url('../maket/fonts/raleway-black.ttf')
+    src        : url('../fonts/raleway-black.ttf')
 }
-.header{
-    height    : 700px;
-    background: aqua;
+@font-face{
+    font-family: 'Roboto-black';
+    src        : url('../fonts/roboto-black.ttf')
+}
+@font-face{
+    font-family: 'Roboto-black-italic';
+    src        : url('../fonts/roboto-black-italic.ttf')
 }
 
+
+.header{
+    height    : 700px;
+    background: #abeafa;
+}
 .headerContainer{
     width     : 1170px;
-    background: olive;
+    background: #abeafa;;
     height    : inherit;
     margin    : 0 auto;
     position  : relative;
 }
 .logo{
-    background: url(../maket/images/surfhouse_logo.png) no-repeat;
+    background: url(../images/surfhouse_logo.png) no-repeat;
     width     : 125px;
     height    : 111px;
     display   : block;
@@ -43,7 +52,7 @@ body{
     top       : 24px;
 }
 .greetingBlock{
-    background: yellow;
+    background: #fff51f;
     width     : 270px;
     height    : 300px;
     position  : absolute;  /* проверить абсолют */
@@ -51,7 +60,6 @@ body{
     left      : 0px;
 }
 .welcomeShop{
-    background    : rgb(100, 160, 4);
     width         : 201px;
     height        : 52px;
     color         : #333333;
@@ -67,7 +75,6 @@ body{
 .greetingWord{
     width      : 219px;
     height     : 60px;
-    background : rgb(5, 150, 5);
     font-family: Raleway-bold, sans-serif;
     font-style : italic;
     position   : absolute;
@@ -77,12 +84,11 @@ body{
     left       : 20px;
 }
 .funrideWrap{
-    width     : 315px;
-    height    : 169px;
-    background: rgb(0, 162, 255);
-    position  : absolute;
-    top       : 243px;
-    left      : 746px;
+    width   : 315px;
+    height  : 169px;
+    position: absolute;
+    top     : 243px;
+    left    : 747px;
 }
 .funrideHead{
     color         : #fff51f;
@@ -128,10 +134,124 @@ body{
     line-height     : 49px;
     text-align      : center;
 }
+.mainMenu{
+    width          : 100%;
+    float          : left;
+    margin         : 0;
+    padding        : 0;
+    list-style-type: none;
+}
+.mainMenu li{
+width : 100%;
+height: 36px;
+}
+.mainMenu li a{
+    display        : block;
+    height         : inherit;
+    text-transform : uppercase;
+    font-family    : Roboto-black, sans-serif;
+    font-size      : 14px;
+    color          : #333333;
+    text-decoration: none;
+    padding        : 0 40px;
+    box-sizing     : border-box;
+    line-height    : 36px;
+}
+.mainMenu li a:hover{
+    background-color: #333333;
+    color           : white;
+}
+.mainMenu li:first-child{
+    height          : 66px;
+    background-color: #333333;
+}
+.mainMenu li:first-child a{
+color      : #fff;
+line-height: 66px;
+}
+.contentNewProducts, .contenTopProducts, .contenSaleProducts{
+    height          : 78px;
+    width           : 100%;
+    float           : left;
+    line-height     : 78px;
+    padding         : 0 25px;
+    box-sizing      : border-box;
+    background-color: #f8f8f8;
+    font-family     : Roboto-black-italic, sans-serif;
+    color           : #707070;
+    font-size       : 22px;
+    text-transform  : uppercase;
+}
+.newProducts, .topProducts, .saleProducts{
+    width           : 100%;
+    float           : left;
+    background-color: #f8f8f8;
+}
+.contenTopProducts, .contenSaleProducts{
+    margin-top: 40px;
+}
+.productUnit{
+    width           : 270px;
+    height          : 320px;
+    background-color: #ffffff;
+    float           : left;
+    margin-right    : 30px;
+    margin-top      : 31px;
+    position        : relative;
+}
+.productUnit:nth-child(3n){
+    margin-right: 0;
+}
+.productUnit:nth-child(-n+3){
+    margin-top: 0;
+}
 
+.productImg{
+    width           : 250px;
+    height          : 235px;
+    background-color: #eaeaea;
+    margin          : 10px;
+}
+.productName{
+    width      : 100%;
+    height     : 14px;
+    color      : #333333;
+    position   : relative;
+    top        : 0px;
+    left       : 0px;
+    font-family: Roboto-black-italic, sans-serif;
+    font-size  : 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.productCoast{
+    width      : 100%;
+    height     : 18px;
+    color      : #333333;
+    position   : relative;
+    top        : 20px;
+    left       : 160px;
+    font-family: Roboto-black-italic, sans-serif;
+    font-size  : 18px;
+    font-weight: 400;
+}
 
+/* .newProduct::after{
+    content: '';
+    clear  : both;
+    display: block;
+}*/
 
+.brandContainer{
+    width           : 1170px;
+    height          : 160px;
+    background-color: #ffffff;
+    margin-top      : 30px;
+    font-size       : 26px;
+    color           : #eaeaea;
+    font-family     : Raleway-extrabold, sans-serif;
 
+}
 
 
 
@@ -151,7 +271,7 @@ body{
 
 
 .content{
-background: gold;
+background: rgb(255, 0, 119);
 }
 .contentContainer{
     width     : 1170px;
@@ -160,17 +280,17 @@ background: gold;
     position  : relative;
 }
 .contentMain{
-    display        : flex;
+    display        : flex;           /* !!!!!! */
     justify-content: space-between;
 }
 
 .contentLeft{
     width     : 270px;
-    background: darkslategrey;
+    background: #26d2fc;
 }
 .contentRight{
     width     : 870px;
-    background: darkorange;
+    background: #f8f8f8;
 }
 
 
