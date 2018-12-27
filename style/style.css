@@ -29,10 +29,24 @@ body{
     font-family: 'Roboto-black-italic';
     src        : url('../fonts/roboto-black-italic.ttf')
 }
+@font-face{
+    font-family: 'Roboto-regular';
+    src        : url('../fonts/roboto-regular.ttf')
+}
+
 .header{
+/*     float     : left; */
     height    : 700px;
+    width     : 100%;
     background: #abeafa;
 }
+
+ /* .header::after{
+    content: '';
+    clear  : both;
+    display: block;
+} */
+
 .headerContainer{
     width     : 1170px;
     background: #abeafa;;
@@ -40,6 +54,13 @@ body{
     margin    : 0 auto;
     position  : relative;
 }
+
+/* .headerContainer::after{
+    content: '';
+    clear  : both;
+    display: block;
+} */
+
 .logo{
     background: url(../images/surfhouse_logo.png) no-repeat;
     width     : 125px;
@@ -130,6 +151,10 @@ body{
     text-decoration : none;
     line-height     : 49px;
     text-align      : center;
+}
+.buttonBuyNow:hover{
+    color           : #fff51f;
+    background-color: #000000;
 }
 .mainMenu{
     background     : #26d2fc;
@@ -370,7 +395,147 @@ line-height: 66px;
     background: #cb2027;
     float     : left;
 }
+.socialBlocks a{
+    color: white;
+}
+.footer{
+    width     : 100%;
+    height    : 350px;
+    background: rgb(59, 59, 59);
+    float     : left;
+}
+.footerContainer{
+    width          : 1170px;
+    background     : rgb(59, 59, 59);
+    height         : 303px;
+    margin         : 0 auto;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
 
+}
+.columnHead{
+font-family: Raleway-extrabold, sans-serif;
+font-size  : 18px;
+color      : white;
+margin-top : 80px;
+} 
+.columnLinks{
+    margin-top: 33px;
+} 
+.columnLinks a {
+    display        : block;
+    color          : white;
+    text-decoration: none;
+    font-family    : Roboto-regular, sans-serif;
+    font-size      : 12px;
+    margin-bottom  : 4px;
+} 
+.columnNewsLetter{
+    font-family: Roboto-regular, sans-serif;
+    color      : white;
+    font-size  : 12px;
+    margin-top : 4px;
+    width      : 270px;
+} 
+.footerColumn input{
+    background: #fff51f;
+    margin-top: 20px;
+    width     : 180px;
+    height    : 30px;
+    border    : none;
+    outline   : none;
+    padding   : 0 21px;
+    box-sizing: border-box;
+    float     : left;
+}
+.footerColumn button{
+    width      : 70px;
+    height     : 30px;
+    background : black;
+    color      : white;
+    font-family: Roboto-regular, sans-serif;
+    font-size  : 12px;
+    border     : none;
+    outline    : none;
+    margin-top : 20px;
+}
+.footerColumn button:hover{
+    background: white;
+    color     : black;
+    outline   : none;
+    
+}
+.payCards{
+    margin-top     : 45px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+.columnAboutUs{
+    width: 238px;
+}
+.columnText{
+    font-family: Roboto-regular, sans-serif;
+    color      : white;
+    font-size  : 12px;
+    margin-top : 4px;
+
+} 
+.phoneAboutUs{
+    margin-top : 17px;
+    font-family: Roboto-regular, sans-serif;
+    color      : white;
+    font-size  : 14px;
+}
+.phoneAboutUs span{
+    margin-right: 18px;
+}
+.emailAboutUs span{
+    font-family : Roboto-regular, sans-serif;
+    color       : white;
+    font-size   : 14px;
+    margin-right: 18px;
+}
+.emailAboutUs{
+    margin-top: 17px;
+}
+.emailAboutUs a{
+    text-decoration: none;
+    color          : #faef03;
+    font-family    : Roboto-regular, sans-serif;
+    font-size      : 14px;
+}
+.copyrightInside span{
+    text-transform: uppercase;
+}
+.copyrightInside{
+font-family: Roboto-regular, sans-serif;
+font-size  : 12px;
+color      : white;
+}
+.footerSocialIcons{
+    width          : 184px;
+    margin-right   : 23px;
+    color          : white;
+    font-size      : 15px;
+    display        : flex;
+    justify-content: space-between;
+}
+.footerCopyright{
+width     : 100%;
+height    : 47px;
+background: #333333;
+}
+.copyrightInside{
+    width          : 1170px;
+    background     : #333333;
+    height         : inherit;
+    margin         : 0 auto;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
 
 
 
@@ -383,12 +548,19 @@ line-height: 66px;
 
 
 .content{
-background: rgb(255, 0, 119);
+    width     : 100%;
+    float     : left;
+    background: #f8f8f8;
 }
+/*  .content::after{
+    content: '';
+    clear  : both;
+    display: block;
+ } */
 .contentContainer{
     width     : 1170px;
-    margin    : -20px auto 0;
-    background: red;
+    margin    : 0 auto;
+    background: #f8f8f8;
     position  : relative;
 }
 .contentMain{
@@ -397,23 +569,14 @@ background: rgb(255, 0, 119);
 }
 .contentLeft{
     width     : 270px;
-    background: #afd819;
+    background: #f8f8f8;
     min-height: inherit;
     float     : left;
+    margin-top: -20px;
 }
 .contentRight{
     width     : 870px;
     background: #f8f8f8;
     float     : right;
-}
-.footer{
-    height    : 351px;
-    background: gray;
-}
-.footerContainer{
-    width     : 1170px;
-    background: rgb(59, 59, 59);
-    height    : inherit;
-    margin    : 0 auto;
-    position  : relative;
+    margin-top: -20px;
 }
