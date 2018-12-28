@@ -35,24 +35,26 @@ body{
 }
 
 .header{
-/*     float     : left; */
-    height    : 700px;
-    width     : 100%;
-    background: #abeafa;
+/*     float : left; */
+    height: 700px;
+    width : 100%;
+/*     background: #abeafa; */
+    background     : url(../images/indexBack.jpg);
+    background-size: cover;
 }
 
- /* .header::after{
+/*  .header::after{
     content: '';
     clear  : both;
     display: block;
 } */
 
 .headerContainer{
-    width     : 1170px;
-    background: #abeafa;;
-    height    : inherit;
-    margin    : 0 auto;
-    position  : relative;
+    width: 1170px;
+/*     background: #abeafa; */
+    height  : inherit;
+    margin  : 0 auto;
+    position: relative;
 }
 
 /* .headerContainer::after{
@@ -193,11 +195,11 @@ color      : #fff;
 line-height: 66px;
 }
 .nowIsOpen{
-    width           : 270px;
-    height          : 300px;
-    background-color: #e0e0e0;
-    margin-top      : 33px;
-    float           : left;
+    width     : 270px;
+    height    : 300px;
+    background: url(../images/store.jpg);
+    margin-top: 33px;
+    float     : left;
 }
 .textOpen{
     font-family   : Raleway-heavy, sans-serif;
@@ -265,8 +267,8 @@ line-height: 66px;
 }
 .productName{
     float      : left;
-    width      : 100%;
-    height     : 14px;
+    width      : 150px;
+    height     : 52px;
     color      : #333333;
     position   : absolute;
     top        : 265px;
@@ -275,6 +277,7 @@ line-height: 66px;
     font-size  : 14px;
     font-weight: 400;
     line-height: 18px;
+    overflow   : hidden;
 }
 .topProducts .productName{
     text-transform: uppercase;  /* это не точно */
@@ -431,6 +434,9 @@ margin-top : 80px;
     font-size      : 12px;
     margin-bottom  : 4px;
 } 
+.columnLinks a:hover{
+    color: #fff51f;
+}
 .columnNewsLetter{
     font-family: Roboto-regular, sans-serif;
     color      : white;
@@ -480,6 +486,7 @@ margin-top : 80px;
     color      : white;
     font-size  : 12px;
     margin-top : 4px;
+    text-align : justify;
 
 } 
 .phoneAboutUs{
